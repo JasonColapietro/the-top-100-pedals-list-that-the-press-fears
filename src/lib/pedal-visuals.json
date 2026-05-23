@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "assetRoot": "/pedals",
+  "format": {
+    "thumbCanvas": 512,
+    "heroCanvas": 1024,
+    "frameShape": "square",
+    "objectFit": "contain"
+  },
+  "pedals": {
+    "boss-ds-1-distortion": {
+      "brand": "Boss",
+      "model": "DS-1 Distortion",
+      "family": "boss-compact",
+      "dominant": "#f26a21",
+      "accent": "#111111"
+    },
+    "ibanez-ts9-tube-screamer": {
+      "brand": "Ibanez",
+      "model": "TS9 Tube Screamer",
+      "family": "tube-screamer",
+      "dominant": "#4f8f68",
+      "accent": "#f4e7bf"
+    },
+    "klon-centaur": {
+      "brand": "Klon",
+      "model": "Centaur",
+      "family": "klon",
+      "dominant": "#d7b768",
+      "accent": "#7c2d20"
+    },
+    "electro-harmonix-big-muff-pi": {
+      "brand": "Electro-Harmonix",
+      "model": "Big Muff Pi",
+      "family": "ehx-large-box",
+      "dominant": "#d9d1be",
+      "accent": "#c52d2d"
+    },
+    "proco-rat-2": {
+      "brand": "ProCo",
+      "model": "RAT 2",
+      "family": "boss-compact",
+      "dominant": "#151515",
+      "accent": "#f4ead6"
+    },
+    "boss-tu-3-chromatic-tuner": {
+      "brand": "Boss",
+      "model": "TU-3 Chromatic Tuner",
+      "family": "tc-compact",
+      "dominant": "#eef1f4",
+      "accent": "#c22d34"
+    },
+    "dunlop-cry-baby-gcb95": {
+      "brand": "Dunlop",
+      "model": "Cry Baby GCB95",
+      "family": "dunlop-wah",
+      "dominant": "#171717",
+      "accent": "#f4f0e6"
+    },
+    "boss-ce-2w-waza-craft-chorus": {
+      "brand": "Boss",
+      "model": "CE-2W Waza Craft Chorus",
+      "family": "boss-compact",
+      "dominant": "#17344b",
+      "accent": "#d9edf8"
+    },
+    "boss-dd-8-digital-delay": {
+      "brand": "Boss",
+      "model": "DD-8 Digital Delay",
+      "family": "boss-compact",
+      "dominant": "#ece4d6",
+      "accent": "#2da9dc"
+    },
+    "boss-cp-1x-compressor": {
+      "brand": "Boss",
+      "model": "CP-1X Compressor",
+      "family": "boss-compact",
+      "dominant": "#1f5f98",
+      "accent": "#eef2f6"
+    }
+  },
+  "aliases": {
+    "boss-ds-1": "boss-ds-1-distortion",
+    "ehx-big-muff-pi": "electro-harmonix-big-muff-pi",
+    "big-muff-pi": "electro-harmonix-big-muff-pi",
+    "ibanez-ts9": "ibanez-ts9-tube-screamer",
+    "klon-centaur-original": "klon-centaur",
+    "boss-tu-3w-waza-craft-tuner": "boss-tu-3-chromatic-tuner",
+    "dunlop-cry-baby-mini-535q": "dunlop-cry-baby-gcb95",
+    "ts9-tube-screamer": "ibanez-ts9-tube-screamer"
+  }
+}
