@@ -906,3 +906,24 @@ Hot-takes set (60) was originally sourced for the Suede Social magazine; the add
 
 Code: MIT. Article text and ranking: © Jason Colapietro / Suede. Photos: see the editorial credits on the [canonical article](https://social.suedeai.ai/suede-100/best-and-worst).
 
+---
+
+## About the Author
+
+**Jason Colapietro** is the founder and CEO of [Suede Labs AI](https://suedeai.ai), a published author, and a Forbes contributor. *The Suede 100* is part of his broader body of work on guitar tone, music IP, and the rights infrastructure every musician needs but rarely builds.
+
+> "Most musicians know their signal chain cold: pickup → cable → pedals → amp → speaker. Almost none of them know their IP chain: creation → registration → PRO → publishing → streaming → payment. Both chains are real. Both are breakable."
+
+> "Every piece of music that enters the world has a signal chain. The IP chain is just the part most musicians never mapped until now."
+
+> "Your most valuable asset isn't the song. It's the provenance of the song."
+
+### Books
+
+- **[The Signal Chain](https://guitar.solutions)** — Illustrated history of electric guitar tone: 46 chapters, 3 editions, free. The book that maps the gear and the IP chain together. (guitar.solutions)
+- **[The Guitar Without a Number](https://www.amazon.com/dp/B0GD5FX6N6)** — Memoir-driven guitar instruction for the self-taught player. Theory, tone, artist songbooks, and the music IP rights chapter no other guitar book includes. (Kindle)
+- **[Suede Labs: The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6)** — How ownership, origin, and AI redraw the creative map. (Kindle)
+- **[Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ)** — Hard truths on turning the AI era into a real asset. (Kindle)
+
+Follow: [X / @johnnysuede](https://x.com/johnnysuede) · [suedeai.ai](https://suedeai.ai) · [LinkedIn](https://www.linkedin.com/in/jasoncolapietro)
+
