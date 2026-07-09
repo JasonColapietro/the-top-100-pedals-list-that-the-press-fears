@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { SuedeListEntry } from '@/lib/suede-100';
 import { RankIndicator } from './RankIndicator';
 import { FightAboutThisLink } from './FightAboutThisLink';
@@ -15,7 +14,7 @@ export function MiddleRow({ entry, edition }: Props) {
       <div className="min-w-0">
         <span className="text-[15px] font-semibold text-[#050b16]">
           {entry.catalogKey ? (
-            <Link href={`/pedal/${entry.catalogKey}`}>{entry.pedal}</Link>
+            <a href={`https://social.suedeai.ai/pedal/${entry.catalogKey}`} target="_blank" rel="noopener noreferrer">{entry.pedal}</a>
           ) : (
             entry.pedal
           )}

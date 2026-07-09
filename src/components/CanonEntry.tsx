@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { SuedeListEntry } from '@/lib/suede-100';
 import { getPedalImageUrl } from '@/lib/pedal-images';
 import { RankIndicator } from './RankIndicator';
@@ -8,8 +7,10 @@ type Props = { entry: SuedeListEntry; edition: string };
 
 export function CanonEntry({ entry, edition }: Props) {
   const padded = String(entry.rank).padStart(2, '0');
-  const NameTag: any = entry.catalogKey ? Link : 'span';
-  const nameProps = entry.catalogKey ? { href: `/pedal/${entry.catalogKey}` } : {};
+  const NameTag: any = entry.catalogKey ? 'a' : 'span';
+  const nameProps = entry.catalogKey
+    ? { href: `https://social.suedeai.ai/pedal/${entry.catalogKey}`, target: '_blank', rel: 'noopener noreferrer' }
+    : {};
   const photo = getPedalImageUrl(entry.brand, entry.pedal, 'thumbs');
   return (
     <article id={`rank-${entry.rank}`} className="border-t border-[rgba(10,18,36,0.10)] py-12">
