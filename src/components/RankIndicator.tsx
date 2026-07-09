@@ -9,7 +9,7 @@ export function RankIndicator({ rank, previousRank, isNew, moveReason }: Props) 
   if (isNew) {
     return (
       <span
-        className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#22d3ee]"
+        className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#39d6dc]"
         title={moveReason}
       >
         NEW
@@ -19,7 +19,7 @@ export function RankIndicator({ rank, previousRank, isNew, moveReason }: Props) 
   if (previousRank === undefined || previousRank === rank) return null;
   const delta = previousRank - rank;
   const symbol = delta > 0 ? '▲' : '▼';
-  const color = delta > 0 ? 'text-[#0a7a2f]' : 'text-[#9f101a]';
+  const color = delta > 0 ? 'text-[#39d6dc]' : 'text-[#ff8b8b]';
   return (
     <span
       className={`font-mono text-[11px] tracking-[0.1em] ${color}`}

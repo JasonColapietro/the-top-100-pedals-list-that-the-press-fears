@@ -70,6 +70,7 @@ export const list: SuedeList = {
   edition: '2026',
   slug: 'best-and-worst',
   title: 'The Suede 100: The List the Press Will Never Print',
+  subtitle: 'No courtesy stars. No ad-buy diplomacy. One hundred ranked verdicts from canon to catastrophe.',
   manifesto: `I've been doing this long enough to have owned gear I'm embarrassed about. Pedals I bought because a magazine gave them four-and-a-half stars and a breathless paragraph about "organic saturation." Pedals that sat on boards for two years because I convinced myself I just hadn't found the right setting. Pedals that cost me four hundred dollars and sounded like stepping on a cat. I kept notes. I kept the receipts — financially and sonically. This list is what I did with them.
 
 The Suede 100 is a single ranked list of one hundred guitar effects pedals, numbered 1 through 100. One is the greatest pedal ever made. One hundred is the worst. Every number between them is a considered judgment about where that pedal actually sits relative to everything else — not relative to its price bracket, not relative to its genre, not relative to the wave of forum posts that shipped with it. Relative to every other pedal on the list. Head to head. Full stop.

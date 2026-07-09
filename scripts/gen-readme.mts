@@ -8,8 +8,8 @@ const REPO_RAW =
 const tierLabel: Record<string, string> = {
   canon: 'The Canon · 1–10',
   great: 'The Great · 11–20',
-  middle: 'The Middle · 21–79',
-  disaster: 'The Disasters · 80–100',
+  middle: 'The Middle · 21–80',
+  disaster: 'The Disasters · 81–100',
 };
 const TIER_ORDER: ('canon' | 'great' | 'middle' | 'disaster')[] = [
   'canon',
@@ -34,6 +34,9 @@ out.push(`> **${list.title}**`);
 out.push(
   `> *Best guitar effects pedals, ranked 1–100. Edition ${list.edition}. By Jason Colapietro.*`,
 );
+if (list.subtitle) {
+  out.push(`> ${list.subtitle}`);
+}
 out.push('');
 out.push(
   `[![Edition ${list.edition}](https://img.shields.io/badge/edition-${list.edition}-9f101a)](${CANONICAL}) [![100 pedals ranked](https://img.shields.io/badge/pedals%20ranked-100-22d3ee)](${CANONICAL}) [![read on Suede Social](https://img.shields.io/badge/read%20on-suede.social-050b16)](${CANONICAL})`,
@@ -96,8 +99,8 @@ out.push('| Tier | With image | Notes |');
 out.push('|---|---|---|');
 out.push('| Canon (1–10) | 10/10 | Full color |');
 out.push('| Great (11–20) | 10/10 | Full color |');
-out.push('| Middle (21–79) | 15/60 | Text-only in the rendered article by design |');
-out.push('| Disaster (80–99) | 0/19 | Text-only in the rendered article by design |');
+out.push('| Middle (21–80) | 15/60 | Compact tiles use photos where coverage exists and rank blocks elsewhere |');
+out.push('| Disaster (81–99) | 0/19 | Receipt-driven text treatment; photo slot renders when coverage exists |');
 out.push('| #100 Climax | ✓ | Desaturated for tone |');
 out.push('');
 out.push(
@@ -110,5 +113,41 @@ out.push(
   `Code: MIT. Article text and ranking: © Jason Colapietro / Suede. Photos: see the editorial credits on the [canonical article](${CANONICAL}).`,
 );
 out.push('');
+out.push('---');
+out.push('');
+out.push('## About the Author');
+out.push('');
+out.push(
+  '**Jason Colapietro** is the founder and CEO of [Suede Labs AI](https://suedeai.ai), a published author, and a Forbes contributor. *The Suede 100* is part of his broader body of work on guitar tone, music IP, and the rights infrastructure every musician needs but rarely builds.',
+);
+out.push('');
+out.push(
+  '> "Most musicians know their signal chain cold: pickup → cable → pedals → amp → speaker. Almost none of them know their IP chain: creation → registration → PRO → publishing → streaming → payment. Both chains are real. Both are breakable."',
+);
+out.push('');
+out.push(
+  '> "Every piece of music that enters the world has a signal chain. The IP chain is just the part most musicians never mapped until now."',
+);
+out.push('');
+out.push('> "Your most valuable asset isn\'t the song. It\'s the provenance of the song."');
+out.push('');
+out.push('### Books');
+out.push('');
+out.push(
+  '- **[The Signal Chain](https://guitar.solutions)** — Illustrated history of electric guitar tone: 46 chapters, 3 editions, free. The book that maps the gear and the IP chain together. (guitar.solutions)',
+);
+out.push(
+  '- **[The Guitar Without a Number](https://www.amazon.com/author/johnnysuede)** — Memoir-driven guitar instruction for the self-taught player. Theory, tone, artist songbooks, and the music IP rights chapter no other guitar book includes. (Kindle)',
+);
+out.push(
+  '- **[Suede Labs: The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6)** — How ownership, origin, and AI redraw the creative map. (Kindle)',
+);
+out.push(
+  '- **[Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ)** — Hard truths on turning the AI era into a real asset. (Kindle)',
+);
+out.push('');
+out.push(
+  'Follow: [X / @johnnysuede](https://x.com/johnnysuede) · [suedeai.ai](https://suedeai.ai) · [LinkedIn](https://www.linkedin.com/in/jasoncolapietro)',
+);
 
 console.log(out.join('\n'));

@@ -1,4 +1,3 @@
-// frontend/src/components/social/suede-100/DisasterEntry.tsx
 import type { SuedeListEntry } from '@/lib/suede-100';
 import { getPedalImageUrl } from '@/lib/pedal-images';
 import { RankIndicator } from './RankIndicator';
@@ -9,41 +8,55 @@ type Props = { entry: SuedeListEntry; edition: string };
 export function DisasterEntry({ entry, edition }: Props) {
   const NameTag: any = entry.catalogKey ? 'a' : 'span';
   const nameProps = entry.catalogKey
-    ? { href: `https://social.suedeai.ai/pedal/${entry.catalogKey}`, target: '_blank', rel: 'noopener noreferrer' }
+    ? {
+        href: `https://social.suedeai.ai/pedal/${entry.catalogKey}`,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        className: 'transition hover:text-[#ff8b8b]',
+      }
     : {};
   const photo = getPedalImageUrl(entry.brand, entry.pedal, 'thumbs');
   return (
-    <article id={`rank-${entry.rank}`} className="border-t border-[rgba(10,18,36,0.10)] py-12">
-      <div className="grid grid-cols-[auto_1fr_auto] gap-x-8 items-start">
-        <div className="font-mono text-[88px] leading-none text-[#050b16]">{entry.rank}</div>
+    <article
+      id={`rank-${entry.rank}`}
+      className="mb-5 overflow-hidden rounded-lg border border-[#ff8b8b]/14 bg-[#0c0808] p-5 md:p-8"
+    >
+      <div className="grid gap-6 md:grid-cols-[8rem_minmax(0,1fr)_12rem] md:items-start">
         <div>
-          <h2 className="text-3xl font-semibold text-[#050b16]">
+          <div className="font-mono text-[64px] leading-none text-[#ff8b8b] md:text-[88px]">{entry.rank}</div>
+          <div className="mt-3 h-1 w-14 bg-[#b31324]" />
+        </div>
+        <div className="min-w-0">
+          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#d7b36a]">
+            Disaster file
+          </p>
+          <h2 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#f8efe2] md:text-4xl">
             <NameTag {...nameProps}>{entry.pedal}</NameTag>
           </h2>
-          <p className="font-mono text-[12px] uppercase tracking-[0.18em] text-[#5a5350]">
+          <p className="mt-2 font-mono text-[12px] uppercase tracking-[0.18em] text-[#bcae95]">
             <span>{entry.brand}</span>{entry.year ? <span> · {entry.year}</span> : null}
           </p>
-          <div className="mt-1">
+          <div className="mt-3">
             <RankIndicator rank={entry.rank} previousRank={entry.previousRank} moveReason={entry.moveReason} />
           </div>
         </div>
         {photo ? (
-          <div className="hidden sm:block w-32 h-32 overflow-hidden rounded-xl border border-[#e6dccb] bg-[#fbf6ee]">
+          <div className="h-48 overflow-hidden rounded-lg border border-[#ff8b8b]/14 bg-[#17090a] md:h-40 lg:h-48">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photo} alt={`${entry.brand} ${entry.pedal}`} className="w-full h-full object-cover grayscale opacity-80" loading="lazy" />
+            <img src={photo} alt={`${entry.brand} ${entry.pedal}`} className="h-full w-full object-cover grayscale opacity-75" loading="lazy" />
           </div>
         ) : null}
       </div>
-      <div className="prose prose-lg mt-6 max-w-2xl text-[#0a1224]">
+      <div className="mt-7 max-w-3xl text-[17px] leading-8 text-[#e7dcc9]">
         <p>{entry.blurb}</p>
       </div>
       {entry.communityQuotes && entry.communityQuotes.length > 0 ? (
-        <div className="mt-6 space-y-4 max-w-2xl">
+        <div className="mt-7 grid gap-5 border-t border-[#ff8b8b]/14 pt-5 md:grid-cols-3">
           {entry.communityQuotes.map((q, i) => (
-            <blockquote key={i} className="border-l-2 border-[#22d3ee] pl-5 italic text-[#0a1224]">
+            <blockquote key={i} className="border-l border-[#ff8b8b]/35 pl-4 text-sm leading-6 text-[#f1ded2]">
               <p>"{q.quote}"</p>
-              <footer className="not-italic text-[11px] font-mono uppercase tracking-[0.18em] text-[#5a5350] mt-1">
-                — <a href={q.sourceUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{q.source}</a>
+              <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-[#d7b36a]">
+                <a href={q.sourceUrl} target="_blank" rel="noopener noreferrer" className="hover:text-[#f8efe2]">{q.source}</a>
               </footer>
             </blockquote>
           ))}

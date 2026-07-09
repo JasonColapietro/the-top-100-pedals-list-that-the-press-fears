@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const BASE_URL = 'https://social.suedeai.ai/suede-100/best-and-worst';
-const TITLE = 'The Suede 100: Best & Worst Guitar Pedals — The List the Press Fears';
+const SITE_ORIGIN = 'https://social.suedeai.ai';
+const BASE_URL = `${SITE_ORIGIN}/suede-100/best-and-worst`;
+const TITLE = 'The Suede 100: Top 100 Guitar Pedals — The List the Press Fears';
 const DESCRIPTION =
-  'Jason Colapietro ranks the 100 most important guitar effects pedals ever made — Canon essentials, hidden greats, and disasters the gear press dare not print.';
+  'Jason Colapietro ranks the top 100 guitar effects pedals ever made: canon essentials, cult greats, expensive mistakes, and disasters the gear press would never print.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(SITE_ORIGIN),
   title: {
     default: TITLE,
     template: '%s | The Suede 100',

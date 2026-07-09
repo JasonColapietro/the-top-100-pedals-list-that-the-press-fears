@@ -2,6 +2,7 @@
 
 > **The Suede 100: The List the Press Will Never Print**
 > *Best guitar effects pedals, ranked 1–100. Edition 2026. By Jason Colapietro.*
+> No courtesy stars. No ad-buy diplomacy. One hundred ranked verdicts from canon to catastrophe.
 
 [![Edition 2026](https://img.shields.io/badge/edition-2026-9f101a)](https://social.suedeai.ai/suede-100/best-and-worst) [![100 pedals ranked](https://img.shields.io/badge/pedals%20ranked-100-22d3ee)](https://social.suedeai.ai/suede-100/best-and-worst) [![read on Suede Social](https://img.shields.io/badge/read%20on-suede.social-050b16)](https://social.suedeai.ai/suede-100/best-and-worst)
 
@@ -194,7 +195,7 @@ Paul Cochrane hand-built these for years before the market caught up to what he 
 
 Kurt Cobain didn't invent the Small Clone's sound, he just proved it could survive any production context you threw at it. The chorus is thick, slightly woozy, and immediately recognizable — the opposite of the CE-2's precision, which is why both belong on this list and neither replaces the other. Sits at #20 rather than higher because it is defined by one association in a way that the CE-2 is not. That's not a weakness; it just tells you where the rank stops.
 
-## The Middle · 21–79
+## The Middle · 21–80
 
 ### #21 · Roland RE-201 Space Echo
 
@@ -586,7 +587,7 @@ A delay and reverb combined in one unit that does both adequately and neither me
 
 Cost $59. Hit $800 used after one YouTube video. DigiTech reissued it. Everyone discovered it was a Tube Screamer all along.
 
-## The Disasters · 80–100
+## The Disasters · 81–100
 
 ### #81 · Headrush Gigboard
 
@@ -896,8 +897,8 @@ pnpm dev
 |---|---|---|
 | Canon (1–10) | 10/10 | Full color |
 | Great (11–20) | 10/10 | Full color |
-| Middle (21–79) | 15/60 | Text-only in the rendered article by design |
-| Disaster (80–99) | 0/19 | Text-only in the rendered article by design |
+| Middle (21–80) | 15/60 | Compact tiles use photos where coverage exists and rank blocks elsewhere |
+| Disaster (81–99) | 0/19 | Receipt-driven text treatment; photo slot renders when coverage exists |
 | #100 Climax | ✓ | Desaturated for tone |
 
 Hot-takes set (60) was originally sourced for the Suede Social magazine; the additional 15 covering Canon + Great + #100 were sourced from Wikimedia Commons (CC-licensed) and manufacturer pages.
