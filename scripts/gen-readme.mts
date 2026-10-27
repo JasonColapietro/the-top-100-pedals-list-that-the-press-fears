@@ -137,13 +137,13 @@ out.push(
   '- **[The Signal Chain](https://guitar.solutions)** — Illustrated history of electric guitar tone: 46 chapters, 3 editions, free. The book that maps the gear and the IP chain together. (guitar.solutions)',
 );
 out.push(
-  '- **[The Guitar Without a Number](https://www.amazon.com/author/johnnysuede)** — Memoir-driven guitar instruction for the self-taught player. Theory, tone, artist songbooks, and the music IP rights chapter no other guitar book includes. (Kindle)',
+  '- **[The Guitar Without a Number](https://www.amazon.com/author/johnnysuede)** — Memoir-driven guitar instruction for the self-taught player. Theory, tone, artist songbooks, and the music IP rights chapter no other guitar book includes. (Now incorporated into The Signal Chain)',
 );
 out.push(
-  '- **[Suede Labs: The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6)** — How ownership, origin, and AI redraw the creative map. (Kindle)',
+  '- **[Suede Labs: The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6)** — How ownership, origin, and AI redraw the creative map. (Available in hardcover, paperback, and Kindle)',
 );
 out.push(
-  '- **[Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ)** — Hard truths on turning the AI era into a real asset. (Kindle)',
+  '- **[Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ)** — Hard truths on turning the AI era into a real asset. (Available in hardcover, paperback, and Kindle)',
 );
 out.push('');
 out.push(
