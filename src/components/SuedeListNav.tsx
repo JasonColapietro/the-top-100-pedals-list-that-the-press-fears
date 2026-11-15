@@ -5,6 +5,7 @@ export function SuedeListNav() {
     { label: 'Middle · 21-80', anchor: '#tier-middle' },
     { label: 'Disasters · 81-99', anchor: '#tier-disaster' },
     { label: '#100', anchor: '#rank-100' },
+    { label: 'Notes', anchor: '/notes' },
   ];
   return (
     <nav

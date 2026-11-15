@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "gen:readme": "tsx scripts/gen-readme.mts > README.md"
+    "gen:readme": "tsx scripts/gen-readme.mts > README.md",
+    "test": "tsx tests/notes.test.mts"
   },
   "dependencies": {
     "next": "14.2.18",

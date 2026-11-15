@@ -7,6 +7,7 @@ import { GreatEntry } from './GreatEntry';
 import { MiddleRow } from './MiddleRow';
 import { DisasterEntry } from './DisasterEntry';
 import { ClimaxBlock } from './ClimaxBlock';
+import { SuedeBuiltBy } from './SuedeBuiltBy';
 
 type TierHeaderProps = {
   eyebrow: string;
@@ -99,6 +100,7 @@ export function SuedeListPage({ list }: { list: SuedeList }) {
       </section>
 
       {climax ? <ClimaxBlock entry={climax} edition={list.edition} /> : null}
+      <SuedeBuiltBy />
     </main>
   );
 }
