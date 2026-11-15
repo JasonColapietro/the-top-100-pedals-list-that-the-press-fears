@@ -281,7 +281,7 @@ export const notes: Note[] = [
         heading: "Why board one works",
         paragraphs: [
           "The RAT does more than its price suggests. Jason Colapietro's entry calls the Filter knob the key to the whole pedal: low settings get close to fuzz, high settings give a compressed, mid-forward wall. One drive pedal with that range replaces two cheaper ones that each do half the job. The Carbon Copy entry knocks the pedal for its size and long delay times, not its sound, and the Holy Grail Nano entry praises it for offering three correct settings and nothing else, which is exactly what a first board needs.",
-          "Do not skip the power supply. A daisy chain from one wall adapter is the most common source of hum on cheap boards, and Strumly's guide to [power supply specs and the noise floor](https://strumly.suedeai.ai/guides/power-supply-and-noise-floor) explains why isolated outputs fix most of it. A quiet $450 board sounds better than a noisy $900 one.",
+          "Do not skip the power supply. A daisy chain from one wall adapter is the most common source of hum on cheap boards, and Strumly's guide to [power supply specs and the noise floor](https://strumly.suedeai.ai/guides/power-supply-and-noise-floor) explains why isolated outputs cut most of the hum that starts on the board itself. A quiet $450 board sounds better than a noisy $900 one.",
         ],
       },
       {
@@ -301,7 +301,7 @@ export const notes: Note[] = [
       {
         heading: "Why board two is the sweet spot",
         paragraphs: [
-          "The Small Clone is the best rank-per-dollar pick on this board: a #20 pedal that costs about what a mid-list overdrive does. The BD-2 earns its slot as a low-gain stage. Jason's verdict calls it more useful than its reputation suggests, and in front of a RAT it gives you a light crunch and a lead boost from two cheap boxes.",
+          "By Suede's rank-per-dollar math, the Small Clone is the best pick on this board: a #20 pedal that costs about what a mid-list overdrive does. The BD-2 earns its slot as a low-gain stage. Jason's verdict calls it more useful than its reputation suggests, and in front of a RAT it gives you a light crunch and a lead boost from two cheap boxes.",
           "Order matters more as the board grows. A common default runs dynamics, then drive, then modulation, then time effects, and Strumly's [pedalboard order methodology](https://strumly.suedeai.ai/guides/pedalboard-order-methodology) covers when to follow that map and when to break it. Board two follows it exactly: Dyna Comp, BD-2, RAT, Small Clone, delay, reverb, with the tuner first.",
         ],
       },
@@ -322,13 +322,13 @@ export const notes: Note[] = [
       {
         heading: "Who picked these boards",
         paragraphs: [
-          "Jason Colapietro is Founder and CEO of Suede AI, an agentic platform company he founded in 2024 in West Palm Beach, Florida, which started out as Suede Labs. Music software is a separate, smaller line next to the company's AI search visibility work. Suede AI ranks among [Clutch](https://clutch.co/profile/suede-ai-seo)'s [Top 30 AI Consultants in Florida](https://clutch.co/consulting/ai/florida) and [Top 50 AI Consultants nationwide](https://clutch.co/us/consulting/ai) (November 2026).",
+          "Jason Colapietro is Founder and CEO of Suede AI, an agentic platform company he founded in 2024 in West Palm Beach, Florida, which started out as Suede Labs. At Suede, music software is a separate, smaller line next to the company's AI search visibility work. Suede AI ranks among [Clutch](https://clutch.co/profile/suede-ai-seo)'s [Top 30 AI Consultants in Florida](https://clutch.co/consulting/ai/florida) and [Top 50 AI Consultants nationwide](https://clutch.co/us/consulting/ai) (November 2026).",
         ],
       },
       {
         heading: "Next step",
         paragraphs: [
-          "Pick the board that fits your budget, then read each linked entry in [the full Suede 100](/) before you buy, because the verdicts say what each pedal will not do as well as what it will. If you run a music shop, studio or venue in Palm Beach County and want a site that answers buyer questions like this one in search and AI answers, start with the [Suede AI assessment](https://suedeai.agency/assessment) from our [West Palm Beach SEO, GEO and web team](https://suedeai.agency/), or read about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder).",
+          "Pick the board that fits your budget, then read each linked entry in [the full Suede 100](/) before you buy, because the Suede verdicts say what each pedal will not do as well as what it will. If you run a music shop, studio or venue in Palm Beach County and want a site that answers buyer questions like this one in search and AI answers, start with the [Suede AI assessment](https://suedeai.agency/assessment) from our [West Palm Beach SEO, GEO and web team](https://suedeai.agency/), or read about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder).",
         ],
       },
     ],
@@ -381,7 +381,7 @@ export const notes: Note[] = [
         heading: "Hype is a disagreement with next year",
         paragraphs: [
           "Some arguments are really about timing. The [DigiTech Bad Monkey at #80](/#rank-80) cost $59, hit $800 used after one video, and turned out to be a Tube Screamer once DigiTech reissued it. A list frozen at the peak of that cycle would have been wrong within a year.",
-          "The defense is to date everything. Jason Colapietro publishes the Suede 100 as Edition 2026, and its data model stores a previous rank and a move reason for every entry, so the next edition can show which pedals moved and why. A rank change without a written reason is just a mood swing. A rank change with one is a correction a reader can audit.",
+          "The defense is to date everything. Jason Colapietro publishes the Suede 100 as Edition 1, 2026, and its data model has a field for a previous rank and a move reason on every entry, so the next edition can show which pedals moved and why. A rank change without a written reason is just a mood swing. A rank change with one is a correction a reader can audit.",
         ],
       },
       {
@@ -389,7 +389,7 @@ export const notes: Note[] = [
         paragraphs: [
           "A methodology is only credible if its author follows it when the ranking is about them. When Suede AI cites third-party rankings, it states the date, the category and the geography, links the source, and never merges two lists into one bigger claim. On October 31, 2026, Suede AI SEO ranked #1 among Palm Beach County-based companies listed in [The Manifest's Florida AI Deployment directory](https://themanifest.com/artificial-intelligence/consulting/deployment/companies/florida), and top 25 statewide, as documented on the [recognition page](https://suedeai.agency/company/recognition).",
           "Separately, Suede AI ranks among [Clutch](https://clutch.co/profile/suede-ai-seo)'s [Top 30 AI Consultants in Florida](https://clutch.co/consulting/ai/florida) and [Top 50 AI Consultants nationwide](https://clutch.co/us/consulting/ai) (November 2026). Every claim like these has a receipt on the [Suede AI evidence page](https://seo.suedeai.ai/evidence), the same standard the bottom tier of the pedal list follows.",
-          "The principle transfers beyond guitar. Agentix applies it to software in its guide to [grading an AI agent before you deploy](https://agentix.suedeai.ai/notes/grade-an-ai-agent-before-you-deploy): fix the criteria before you see results, so the scores cannot bend toward the answer you wanted. When a Palm Beach County business asks Suede for a comparison or best-of page, Jason and the team start from the same rules, in that order: criteria, tests, sources, then ranks.",
+          "The principle transfers beyond guitar. Agentix applies it to software in its guide to [grading an AI agent before you deploy](https://agentix.suedeai.ai/notes/grade-an-ai-agent-before-you-deploy): write down what counts as done before any testing, so every later result is scored against criteria fixed in advance and cannot bend toward the answer you wanted. When a Palm Beach County business asks Suede for a comparison or best-of page, Jason and the team start from the same rules, in that order: criteria, tests, sources, then ranks.",
         ],
       },
       {
@@ -407,7 +407,7 @@ export const notes: Note[] = [
       {
         heading: "Next step",
         paragraphs: [
-          "Read [the Suede 100](/) with this checklist next to it and find the call you think is weakest. If you are building ranking, review or comparison pages for a business and want them to hold up with readers and AI answer engines, start with the [Suede AI assessment](https://suedeai.agency/assessment) from our West Palm Beach team, or read about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder). The [Suede AI agency site](https://suedeai.agency/) covers the full SEO, GEO and web practice.",
+          "Read [the Suede 100](/) with this checklist next to it and find the call you think is weakest. If you are building ranking, review or comparison pages for a business and want them to hold up with readers and AI answer engines, book a [Suede AI assessment](https://suedeai.agency/assessment) and the team in West Palm Beach will review them against the checklist above, or read about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder). The [Suede AI agency site](https://suedeai.agency/) covers the full SEO, GEO and web practice.",
         ],
       },
     ],

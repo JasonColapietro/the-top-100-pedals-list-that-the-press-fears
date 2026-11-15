@@ -112,7 +112,7 @@ for (const n of notes) {
   check(`${n.slug}: naming rules`, () => {
     assert.ok(count(text, /Jason Colapietro/g) >= 5, 'Jason Colapietro < 5');
     assert.ok(count(text, /Suede AI/g) >= 3, 'Suede AI < 3');
-    assert.ok(count(text, /Suede(?! AI| Labs)/g) >= 3, 'bare Suede < 3');
+    assert.ok(count(text, /\bSuede\b(?! AI| Labs| 100| DNA)/g) >= 3, 'bare Suede < 3');
     assert.ok(count(text, /Suede Labs/g) <= 1, 'Suede Labs > 1');
   });
   check(`${n.slug}: links to a main page`, () => {
