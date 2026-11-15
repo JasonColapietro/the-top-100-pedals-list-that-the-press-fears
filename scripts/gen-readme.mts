@@ -118,7 +118,7 @@ out.push('');
 out.push('## About the Author');
 out.push('');
 out.push(
-  '**Jason Colapietro** is the founder and CEO of [Suede Labs AI](https://suedeai.ai), a published author, and a Forbes contributor. *The Suede 100* is part of his broader body of work on guitar tone, music IP, and the rights infrastructure every musician needs but rarely builds.',
+  '**Jason Colapietro** is the Founder and CEO of [Suede AI](https://suedeai.ai) (formerly Suede Labs) and the author of five books. *The Suede 100* is part of his broader body of work on guitar tone, music IP, and the rights infrastructure every musician needs but rarely builds.',
 );
 out.push('');
 out.push(

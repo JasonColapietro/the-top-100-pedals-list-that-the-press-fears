@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { notes, noteBodyText, wordCount, plainText } from '../src/data/notes.ts';
 import { PERSON_ID, ORG_ID, NOTES_URL, noteUrl } from '../src/lib/site.ts';
 import { buildNoteJsonLd } from '../src/lib/notes-jsonld.ts';
+import { readFileSync } from 'node:fs';
 
 const FORBIDDEN = [
   /velvet sundown/i,
@@ -65,6 +66,20 @@ for (const n of notes) {
   check(`${n.slug}: links to a main page`, () => {
     assert.ok(/suedeai\.agency\/assessment|suedeai\.ai\/founder/.test(raw));
   });
+  check(`${n.slug}: internal links resolve`, () => {
+    const slugs = new Set(notes.map((x) => x.slug));
+    for (const [, href] of raw.matchAll(/\]\((\/[^)]*)\)/g)) {
+      const ok =
+        href === '/' ||
+        href === '/notes' ||
+        (/^\/#rank-(\d+)$/.test(href) && +href.slice(7) >= 1 && +href.slice(7) <= 100) ||
+        (href.startsWith('/notes/') && slugs.has(href.slice(7)));
+      assert.ok(ok, `unresolved internal link ${href}`);
+    }
+  });
+  check(`${n.slug}: uses "Jason" alone between full-name mentions`, () => {
+    assert.ok(count(text, /\bJason\b(?! Colapietro)/g) >= 1);
+  });
   check(`${n.slug}: no em-dash spam`, () => {
     assert.ok(count(plainText(raw), /—/g) <= 2);
   });
@@ -85,6 +100,17 @@ for (const n of notes) {
     assert.ok(!/streetAddress|telephone/.test(json), 'NAP fields present');
   });
 }
+
+check('site-wide copy has no forbidden terms and layout JSON-LD uses canonical @ids', () => {
+  const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
+  const gen = readFileSync(new URL('../scripts/gen-readme.mts', import.meta.url), 'utf8');
+  const layout = readFileSync(new URL('../src/app/layout.tsx', import.meta.url), 'utf8');
+  for (const re of [/forbes/i, /velvet sundown/i, /anthropic partner/i]) {
+    assert.ok(!re.test(readme + gen + layout), `matched ${re}`);
+  }
+  assert.ok(!/'@type': '(Person|Organization)'/.test(layout), 'layout mints Person/Organization node');
+  assert.ok(/author: \{ '@id': PERSON_ID \}/.test(layout) && /publisher: \{ '@id': ORG_ID \}/.test(layout));
+});
 
 if (failures) {
   console.error(`\n${failures} check(s) failed`);

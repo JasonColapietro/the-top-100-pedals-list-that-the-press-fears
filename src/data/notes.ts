@@ -1,5 +1,5 @@
 // Source of truth for the /notes article section. Pages, sitemap, llms.txt,
-// llms-full.txt and the guard script (scripts/check-notes.mts) all read this.
+// llms-full.txt and the guard test (tests/notes.test.mts) all read this.
 // Inline links use [anchor text](url). Internal links start with "/".
 
 export type NoteSection = {
@@ -44,13 +44,13 @@ export const notes: Note[] = [
         heading: 'The rule that shaped everything: one list, one number per pedal',
         paragraphs: [
           'Most gear lists avoid the hard question by splitting the field. Ten fuzzes here, ten delays there, a separate list for metal. Jason Colapietro took the opposite position. The Suede 100 is one list, numbered 1 through 100, and every pedal is ranked against every other pedal on it, not against its price bracket or its genre. The [Klon Centaur sits at #1](/#rank-1). The [Boss MT-2 Metal Zone sits at #100](/#rank-100). Everything between them had to earn a specific slot.',
-          'That constraint did most of the research work. Once two pedals cannot tie, you are forced to decide whether a Tube Screamer beats a RAT on the conditions that actually matter: a loud room, a real band, a player who is not reading the manual. Jason kept a running head-to-head log, and each time a pedal moved, the log had to say why.',
+          'That constraint did most of the research work. Once two pedals cannot tie, you are forced to decide whether a Tube Screamer beats a RAT on the conditions that actually matter: a loud room, a real band, a player who is not reading the manual. Jason kept notes on every comparison, and each time a pedal moved, the notes had to say why.',
         ],
       },
       {
         heading: 'Where the evidence came from',
         paragraphs: [
-          'The list is built on use, not on press releases. Jason Colapietro owned, borrowed, sold, and rebought a large share of the pedals on it, and the entries say so plainly. The RAT entry admits he sold one in 2018 and bought another in 2021 because he was wrong. The Big Muff entry compares three different versions he played side by side.',
+          'The list is built on use, not on press releases. Jason Colapietro owned, sold, and in some cases rebought many of the pedals on it, and the entries say so plainly. The RAT entry admits he sold one in 2018 and bought another in 2021 because he was wrong. The Big Muff entry compares three versions he has owned.',
           'Where a claim could be tested, it was tested. The Klon verdict rests on a level-matched blind comparison against three clones: a KTR, a Tumnus, and a hand-wired boutique unit. Level matching matters more than any other step in a pedal test, because the louder pedal almost always wins a casual A/B. Matching output first removes that bias before anyone forms an opinion.',
           'For the bottom tier, opinion alone was not enough. The disaster entries carry community quotes with linked sources, so a reader can see that the complaint about a menu system or a noise floor did not start with Suede. The rule Jason Colapietro used: if you are going to call something a disaster in public, bring receipts that are not your own.',
         ],
@@ -73,7 +73,7 @@ export const notes: Note[] = [
         heading: 'The engineering under the page',
         paragraphs: [
           'The page is a Next.js build backed by a single typed data file. Every entry has a rank, pedal, brand, tier, verdict, and a stable key, and the tier sections, the anchors like #rank-37, and the repository README are all generated from that one file. Nobody edits a rank in two places, so the page and the README can never disagree.',
-          'That is the same discipline Suede AI applies to client work. Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. AI search visibility is a service line, and music and creator software like this list is a separate, smaller line. The habit carries across all of it: one source of truth, generated outputs, and claims a reader can check. Jason has merged [54 pull requests across 46 open-source repositories he does not maintain](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests), including Jest and Backstage, and that review culture shows up in how a pedal list is versioned.',
+          'That is the same discipline Suede applies to client work. Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. AI search visibility is a service line, and music and creator software like this list is a separate, smaller line. The habit carries across all of it: one source of truth, generated outputs, and claims a reader can check. Jason has merged [54 pull requests across 46 open-source repositories he does not maintain](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests), including Jest and Backstage, and that review culture shows up in how a pedal list is versioned.',
         ],
       },
       {
@@ -91,7 +91,7 @@ export const notes: Note[] = [
       {
         heading: 'Next step',
         paragraphs: [
-          'Read [the full Suede 100 ranking](/) start to finish, then pick the rank you disagree with most and take it to the thread. If you want a ranking or reference page built with the same structure for your own business, start with the [Suede AI site assessment](https://suedeai.agency/assessment) from our West Palm Beach team, or read more about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder). His illustrated history of guitar tone, [The Signal Chain](https://guitar.solutions), covers the gear story behind many of these pedals.',
+          'Read [the full Suede 100 ranking](/) start to finish, then pick the rank you disagree with most and take it to the thread. If you want Suede to build a ranking or reference page with the same structure for your own business, start with the [Suede AI site assessment](https://suedeai.agency/assessment) from our West Palm Beach team, or read more about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder). His illustrated history of guitar tone, [The Signal Chain](https://guitar.solutions), covers the gear story behind many of these pedals.',
         ],
       },
     ],
@@ -108,15 +108,15 @@ export const notes: Note[] = [
     dateModified: '2026-11-15',
     keywords: ['pedalboard humidity', 'guitar pedal care Florida', 'Jupiter FL guitarists', 'Palm Beach musicians'],
     intro: [
-      'The first sign is usually a crackle. You step on a drive pedal at a patio gig in Jupiter, and instead of a clean switch you get a pop and a half second of static. Nothing is broken yet. The air is just doing what South Florida air does to metal contacts, and Jason Colapietro has heard that pop on more than one Palm Beach County stage.',
-      'Jason Colapietro runs Suede AI out of West Palm Beach, and the pedals on [the Suede 100](/) were played in this climate, not in a climate-controlled showroom. Here is the routine that keeps a board working through a Palm Beach County summer.',
+      'The first sign is usually a crackle. You step on a drive pedal at a patio gig in Jupiter, and instead of a clean switch you get a pop and a half second of static. Nothing is broken yet. The air is just doing what South Florida air does to metal contacts, and any Palm Beach County player who gigs outdoors will hear it sooner or later.',
+      'Jason Colapietro runs Suede AI out of West Palm Beach, so this is the climate Suede writes from. Here is a routine that keeps a board working through a Palm Beach County summer.',
     ],
     sections: [
       {
         heading: 'What humidity and salt actually do to a pedalboard',
         paragraphs: [
           'Moist air does three kinds of damage. It oxidizes contacts, which is where the crackle comes from: input and output jacks, DC jacks, battery snaps, and the internal contacts of footswitches. It corrodes the cheapest metal on the board first, which is often the plating on patch cable plugs. And near the coast, from Juno Beach to the Jupiter Inlet, salt in the air speeds up all of it.',
-          'Heat adds a fourth problem. Adhesive on hook-and-loop fastener softens in a hot car, and a pedal that was solid in March can slide off the board by July. Germanium fuzz circuits are also temperature sensitive. The [Dallas Arbiter Fuzz Face entry at #6](/#rank-6) notes that it sounds different in a cold room than a hot one, and a Florida club in August is about as hot as a stage gets.',
+          'Heat adds a fourth problem. Adhesive on hook-and-loop fastener softens in a hot car, and a pedal that was solid in March can slide off the board by July. Germanium fuzz circuits are also temperature sensitive. Jason Colapietro\'s [Dallas Arbiter Fuzz Face entry at #6](/#rank-6) notes that it sounds different in a cold room than a hot one, and a Florida club in August is about as hot as a stage gets.',
         ],
       },
       {
@@ -142,7 +142,7 @@ export const notes: Note[] = [
       {
         heading: 'Cleaning jacks, switches, and cables',
         paragraphs: [
-          'Plan a quick service every couple of months during the wet season. Jason Colapietro ties it to the calendar rather than waiting for a symptom. Unplug everything, spray a small amount of electronic contact cleaner on each patch cable plug, then insert and remove the plug from its jack a few times to scrub both surfaces. Do the DC power plugs too. A small brush helps on the outside of jacks where salt film collects.',
+          'Plan a quick service every couple of months during the wet season. Jason Colapietro\'s advice is to tie it to the calendar rather than wait for a symptom. Unplug everything, spray a small amount of electronic contact cleaner on each patch cable plug, then insert and remove the plug from its jack a few times to scrub both surfaces. Do the DC power plugs too. A small brush helps on the outside of jacks where salt film collects.',
           'If a footswitch still pops after cleaning the jacks, the problem is inside the switch. That is a soldering job, and the right fix is usually a replacement switch rather than more spray. Do not soak a pedal in cleaner hoping it reaches the inside. It mostly reaches the circuit board.',
           'Patch cables are the cheapest part of the board and the first to go. If one cable keeps causing trouble, replace it. Corroded plugs can be cleaned, but rarely all the way back to new.',
         ],
@@ -150,22 +150,22 @@ export const notes: Note[] = [
       {
         heading: 'Power, storms, and hurricane season',
         paragraphs: [
-          'South Florida power is not gentle. Afternoon storms bring surges and brownouts, and a cheap wall wart is the weakest link on most boards. Jason Colapietro\'s rule is simple: use an isolated power supply rated for your pedals, plug it into a surge protector, and unplug the board entirely when lightning is close.',
+          'South Florida power is not gentle. Afternoon storms bring surges and brownouts, and a cheap wall wart is the weakest link on most boards. Jason\'s rule is simple: use an isolated power supply rated for your pedals, plug it into a surge protector, and unplug the board entirely when lightning is close.',
           'From June through November, keep a short plan. When a storm is forecast, pack the board in its case with fresh silica gel, put it on a high shelf off the floor, and keep it inside the house. If the power goes out for days and the house turns humid, the board is safer in a closed case than on an open stand.',
         ],
       },
       {
         heading: 'Velcro, mounting, and board layout',
         paragraphs: [
-          'Heat-softened adhesive is the quiet failure, and it is the one Jason Colapietro sees most on boards that live in cars. Clean the bottom of each pedal with isopropyl alcohol before applying new fastener, press it firmly, and let it cure overnight indoors before a gig. For pedals that keep sliding, a mechanical mount or a zip tie through the board rail beats any adhesive in a Florida summer.',
+          'Heat-softened adhesive is the quiet failure, and it shows up most on boards that live in cars. Clean the bottom of each pedal with isopropyl alcohol before applying new fastener, press it firmly, and let it cure overnight indoors before a gig. For pedals that keep sliding, a mechanical mount or a zip tie through the board rail beats any adhesive in a Florida summer.',
           'Leave a little air around anything that runs warm, like digital delays and reverbs, and route power cables away from signal cables to keep hum down. A tidy board is also easier to clean, which matters when you are cleaning it more often than a player in a drier climate.',
         ],
       },
       {
         heading: 'Next step for Palm Beach County players',
         paragraphs: [
-          'If you are rebuilding a board after a rough summer, use [the Suede 100](/) to decide which pedals deserve the space. For more gear notes from the Suede network, read the [Guitar Hub notes](https://guitarhub.org/notes), the [Signal Chain reference notes at guitar.services](https://guitar.services/notes), and the [Suede DNA rig archive articles](https://dna.suedeai.ai/articles). Local players can follow the Jupiter music and events scene in [Jupiter Social](https://jupitersocialfl.com/), the local magazine published with Suede AI.',
-          'Suede AI builds websites and AI search visibility for South Florida businesses, from Jupiter to Boca Raton. If your venue, studio, or shop needs a site that shows up in local search and AI answers, start with the [Suede AI assessment](https://suedeai.agency/assessment) from our West Palm Beach team, or meet [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder).',
+          'If you are rebuilding a board after a rough summer, use [the Suede 100](/), Jason Colapietro\'s ranked list, to decide which pedals deserve the space. For more gear notes from the Suede network, read the [Guitar Hub notes](https://guitarhub.org/notes), the [Signal Chain reference notes at guitar.services](https://guitar.services/notes), and the [Suede DNA rig archive articles](https://dna.suedeai.ai/articles). Local players can follow the Jupiter music and events scene in [Jupiter Social](https://jupitersocialfl.com/), the local magazine published with Suede AI.',
+          'Suede AI builds websites and AI search visibility for South Florida businesses, from Jupiter to Boca Raton. If your venue, studio, or shop needs a site that shows up in local search and AI answers, Suede can help. Start with the [Suede AI assessment](https://suedeai.agency/assessment) from our West Palm Beach team, or meet [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder).',
         ],
       },
     ],
@@ -225,7 +225,7 @@ export const notes: Note[] = [
         heading: 'Technical basics that decide whether you are read at all',
         paragraphs: [
           'None of the writing matters if the page is hard to fetch. Ranking pages should render their text on the server, load without scripts for the core content, carry one canonical tag, and appear in the sitemap with an honest last modified date. Suede AI handles this under its [technical SEO service](https://suedeai.agency/services/technical-seo), and the citation side under [AI visibility](https://suedeai.agency/services/ai-visibility).',
-          'Jason Colapietro\'s training backs the method: 21 earned course credentials across eight providers, including Semrush Academy\'s Local SEO Essentials and HubSpot AEO Fundamentals, documented in the [training credentials gallery](https://seo.suedeai.ai/evidence#training-credentials). If you want to check a page\'s readiness yourself, [Suede Scan](https://optimize.suedeai.ai/notes) covers AI readiness, and [Agentix](https://agentix.suedeai.ai/notes) grades how agents handle a site.',
+          'Jason Colapietro\'s training backs the method: 21 earned course credentials across eight providers, including Semrush Academy\'s Local SEO Essentials and HubSpot AEO Fundamentals, documented in the [training credentials gallery](https://seo.suedeai.ai/evidence#training-credentials). Jason has also shipped [9 iOS apps under his own Apple developer account](https://apps.apple.com/us/developer/jason-colapietro/id1895958699). If you want to check a page\'s readiness yourself, [Suede Scan](https://optimize.suedeai.ai/notes) covers AI readiness, and [Agentix](https://agentix.suedeai.ai/notes) grades how agents handle a site.',
         ],
       },
       {

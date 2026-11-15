@@ -1,6 +1,7 @@
 import Script from "next/script";
 import type { Metadata } from 'next';
 import './globals.css';
+import { ORG_ID, PERSON_ID } from '@/lib/site';
 
 const SITE_ORIGIN = 'https://social.suedeai.ai';
 const BASE_URL = `${SITE_ORIGIN}/suede-100/best-and-worst`;
@@ -81,16 +82,8 @@ const jsonLd = {
   url: BASE_URL,
   description: DESCRIPTION,
   inLanguage: 'en-US',
-  publisher: {
-    '@type': 'Organization',
-    name: 'Suede Labs AI',
-    url: 'https://suedeai.ai',
-  },
-  author: {
-    '@type': 'Person',
-    name: 'Jason Colapietro',
-    url: 'https://github.com/JasonColapietro',
-  },
+  publisher: { '@id': ORG_ID },
+  author: { '@id': PERSON_ID },
   sameAs: [
     'https://twitter.com/suedeai',
     'https://github.com/Suede-AI',

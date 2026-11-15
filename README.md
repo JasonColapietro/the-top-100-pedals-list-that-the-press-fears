@@ -911,7 +911,7 @@ Code: MIT. Article text and ranking: © Jason Colapietro / Suede. Photos: see th
 
 ## About the Author
 
-**Jason Colapietro** is the founder and CEO of [Suede Labs AI](https://suedeai.ai), a published author, and a Forbes contributor. *The Suede 100* is part of his broader body of work on guitar tone, music IP, and the rights infrastructure every musician needs but rarely builds.
+**Jason Colapietro** is the Founder and CEO of [Suede AI](https://suedeai.ai) (formerly Suede Labs) and the author of five books. *The Suede 100* is part of his broader body of work on guitar tone, music IP, and the rights infrastructure every musician needs but rarely builds.
 
 > "Most musicians know their signal chain cold: pickup → cable → pedals → amp → speaker. Almost none of them know their IP chain: creation → registration → PRO → publishing → streaming → payment. Both chains are real. Both are breakable."
 
