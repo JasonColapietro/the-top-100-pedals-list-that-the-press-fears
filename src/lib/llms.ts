@@ -12,7 +12,7 @@ const HEADER = [
   '',
   '## Main pages',
   `- [The Suede 100 ranking](${BASE_URL}): all 100 pedals, tiers Canon 1-10, Greats 11-20, Middle 21-80, Disasters 81-99, and #100. Each entry has an anchor like #rank-37.`,
-  `- [Notes](${NOTES_URL}): articles on the list's research, pedal care, and ranking pages for AI answers.`,
+  `- [Notes](${NOTES_URL}): articles on the list's research and disagreement methodology, budget pedalboards, pedal care, and ranking pages for AI answers.`,
 ];
 
 const ABOUT = [
@@ -30,6 +30,8 @@ const ABOUT = [
   '- [Suede DNA rig archive](https://dna.suedeai.ai/articles)',
   '- [FretPulse](https://fretpulse.suedeai.ai/)',
   '- [Guitar Chords reference](https://guitarchords.info/notes)',
+  '- [Strumly guitar guides](https://strumly.suedeai.ai/guides/pedalboard-order-methodology)',
+  '- [Agentix agent grading notes](https://agentix.suedeai.ai/notes)',
 ];
 
 export function llmsTxt() {

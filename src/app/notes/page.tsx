@@ -7,7 +7,7 @@ import { NOTES_URL } from '@/lib/site';
 
 const TITLE = 'Suede 100 Notes: Pedal Research, Care and AI Search';
 const DESCRIPTION =
-  'Notes from Jason Colapietro and Suede AI in West Palm Beach: how the Suede 100 was built, pedalboard care in Florida humidity, and ranking pages for AI answers.';
+  'Jason Colapietro and Suede AI on the Suede 100: research and disagreement rules, budget pedalboards, Florida humidity care, and ranking pages for AI answers.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -31,9 +31,9 @@ export default function NotesIndex() {
         <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-[#39d6dc]">The Suede 100 · Notes</p>
         <h1 className="mt-4 font-display text-4xl font-semibold leading-tight md:text-5xl">Notes from the Suede 100</h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-[#d8c8ae]">
-          How the list was researched, how to keep a board alive in Palm Beach County air, and how Suede AI structures
-          ranking pages so AI answers can cite them. Written by Jason Colapietro and the Suede AI team in West Palm
-          Beach, Florida.
+          How the list was researched and how it handles disagreement, three budget pedalboards built from the
+          ranking, how to keep a board alive in Palm Beach County air, and how Suede AI structures ranking pages so AI
+          answers can cite them. Written by Jason Colapietro and the Suede AI team in West Palm Beach, Florida.
         </p>
         <ul className="mt-12 divide-y divide-[#f8efe2]/10 border-y border-[#f8efe2]/10">
           {notes.map((n) => (

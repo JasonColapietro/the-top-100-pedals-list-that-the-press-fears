@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { notes, noteBodyText, wordCount, plainText } from '../src/data/notes.ts';
 import { PERSON_ID, ORG_ID, NOTES_URL, noteUrl } from '../src/lib/site.ts';
 import { buildNoteJsonLd } from '../src/lib/notes-jsonld.ts';
+import * as sitemapModule from '../src/app/sitemap.ts';
+import { llmsTxt, llmsFullTxt } from '../src/lib/llms.ts';
 import { readFileSync } from 'node:fs';
 
 const FORBIDDEN = [
@@ -38,9 +40,59 @@ const check = (name: string, fn: () => void) => {
   }
 };
 
-check('exactly three notes with unique slugs', () => {
-  assert.equal(notes.length, 3);
-  assert.equal(new Set(notes.map((n) => n.slug)).size, 3);
+// Round 1 notes published 2026-11-14; round 4 depth notes published 2026-11-15.
+// tsx may wrap the Next route module's default export in a CJS namespace.
+const sitemapExport: any = (sitemapModule as any).default;
+const sitemap: () => { url: string; lastModified?: string | Date }[] =
+  typeof sitemapExport === 'function' ? sitemapExport : sitemapExport.default;
+
+const ROUND_ONE = new Set([
+  'how-the-suede-100-pedal-list-was-built',
+  'pedalboard-care-south-florida-humidity',
+  'why-list-articles-get-cited-by-ai-answers',
+]);
+const ROUND_FOUR = new Set(['budget-pedalboards-from-the-suede-100', 'how-the-suede-100-handles-disagreement']);
+const CLUTCH =
+  "Suede AI ranks among Clutch's Top 30 AI Consultants in Florida and Top 50 AI Consultants nationwide (November 2026).";
+const SATELLITES = [
+  'guitar.services',
+  'guitarchords.info',
+  'dna.suedeai.ai',
+  'guitarhub.org',
+  'signal.suedeai.ai',
+  'agentix.suedeai.ai',
+  'docs.suedeai.ai',
+  'podcast.suedeai.ai',
+  'optimize.suedeai.ai',
+  'strumly.suedeai.ai',
+  'fretpulse.suedeai.ai',
+  'cosmos.suedeai.ai',
+  'scan.suedeai.ai',
+];
+
+check('exactly five notes with unique slugs, round 1 and round 4 all present', () => {
+  assert.equal(notes.length, 5);
+  assert.equal(new Set(notes.map((n) => n.slug)).size, 5);
+  for (const slug of [...ROUND_ONE, ...ROUND_FOUR]) assert.ok(notes.some((n) => n.slug === slug), `missing ${slug}`);
+});
+
+check('sitemap lists every note with lastmod 2026-11-15', () => {
+  const entries = sitemap();
+  for (const n of notes) {
+    const e = entries.find((x) => x.url === noteUrl(n.slug));
+    assert.ok(e, `sitemap missing ${n.slug}`);
+    assert.equal(e!.lastModified, '2026-11-15');
+  }
+  assert.ok(entries.some((x) => x.url === NOTES_URL && x.lastModified === '2026-11-15'));
+});
+
+check('llms.txt and llms-full.txt list every note', () => {
+  const short = llmsTxt();
+  const full = llmsFullTxt();
+  for (const n of notes) {
+    assert.ok(short.includes(noteUrl(n.slug)), `llms.txt missing ${n.slug}`);
+    assert.ok(full.includes(`URL: ${noteUrl(n.slug)}`), `llms-full.txt missing ${n.slug}`);
+  }
 });
 
 for (const n of notes) {
@@ -80,6 +132,23 @@ for (const n of notes) {
   check(`${n.slug}: uses "Jason" alone between full-name mentions`, () => {
     assert.ok(count(text, /\bJason\b(?! Colapietro)/g) >= 1);
   });
+  if (ROUND_FOUR.has(n.slug)) {
+    check(`${n.slug}: round 4 depth rules`, () => {
+      const w = wordCount(n);
+      assert.ok(w >= 900 && w <= 1300, `round 4 word count ${w}`);
+      const deep = new Set<string>();
+      for (const [, href] of raw.matchAll(/\]\((https:\/\/[^)]+)\)/g)) {
+        const u = new URL(href);
+        if (SATELLITES.includes(u.hostname) && u.pathname.split('/').filter(Boolean).length >= 2) deep.add(href);
+      }
+      assert.ok(deep.size >= 2, `needs 2 deep links to sibling satellite articles, found ${deep.size}`);
+      assert.ok(/\]\(https:\/\/suedeai\.agency\/[^)]*\)/.test(raw), 'missing suedeai.agency link');
+      assert.ok(raw.includes('](https://suedeai.ai/founder)'), 'missing founder link');
+      assert.equal(count(text, new RegExp(CLUTCH.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')), 1, 'Clutch claim must appear exactly once');
+      assert.ok(raw.includes('](https://clutch.co/consulting/ai/florida)') && raw.includes('](https://clutch.co/us/consulting/ai)'));
+      assert.equal(n.dateModified, '2026-11-15');
+    });
+  }
   check(`${n.slug}: no em-dash spam`, () => {
     assert.ok(count(plainText(raw), /—/g) <= 2);
   });
@@ -92,7 +161,7 @@ for (const n of notes) {
     assert.deepEqual(Object.keys(post.author), ['@id']);
     assert.deepEqual(Object.keys(post.publisher), ['@id']);
     assert.equal(post.mainEntityOfPage['@id'], noteUrl(n.slug));
-    assert.equal(post.datePublished, '2026-11-14');
+    assert.equal(post.datePublished, ROUND_FOUR.has(n.slug) ? '2026-11-15' : '2026-11-14');
     assert.equal(crumbs.itemListElement.at(-1).item, noteUrl(n.slug));
     assert.equal(crumbs.itemListElement[1].item, NOTES_URL);
     const json = JSON.stringify(ld);

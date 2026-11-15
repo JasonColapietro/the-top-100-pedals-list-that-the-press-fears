@@ -236,6 +236,182 @@ export const notes: Note[] = [
       },
     ],
   },
+  {
+    slug: "budget-pedalboards-from-the-suede-100",
+    title: "Building a Pedalboard on a Budget From the Suede 100: Three Boards at Three Price Points",
+    metaTitle: "Budget Pedalboards From the Suede 100: Three Price Points",
+    description:
+      "Three pedalboards built from Jason Colapietro's Suede 100 at about $450, $900 and $1,800, picked by rank per dollar, plus the bargains to skip.",
+    excerpt:
+      "The #2 and #4 pedals on the list still sell new for around $100. Three boards at three budgets, picked by rank per dollar, and the bargains to skip.",
+    datePublished: "2026-11-15",
+    dateModified: "2026-11-15",
+    keywords: ["budget pedalboard", "best cheap guitar pedals", "Suede 100 pedalboard", "Jason Colapietro", "West Palm Beach guitarists"],
+    intro: [
+      "Two of the top four pedals on the Suede 100 still sell new for around a hundred dollars. The [Electro-Harmonix Big Muff Pi sits at #2](/#rank-2) and the [ProCo RAT 2 sits at #4](/#rank-4), above nearly every boutique drive on the list. That is the whole case for building a budget board from a ranking instead of from a shopping cart.",
+      "Jason Colapietro ranked one hundred pedals against each other with no ties and no price brackets. This note runs the list backwards: given a fixed budget, which ranked pedals give a player in Jupiter or West Palm Beach the most board for the money? Here are three boards, at roughly $450, $900 and $1,800, with the rank doing the tiebreaking whenever two options cost about the same.",
+    ],
+    sections: [
+      {
+        heading: "How to read the list when money is the constraint",
+        paragraphs: [
+          "The Suede 100 ignores price on purpose, so the useful lens for a budget is rank per dollar. A canon or great-tier pedal that is still in production and still cheap is the best buy on the list. A handful qualify: the RAT 2, the current Big Muff, and the [Electro-Harmonix Small Clone at #20](/#rank-20). A middle-tier pedal at a boutique price is the worst buy, unless it does a job nothing cheaper does.",
+          "The prices below are approximate US street prices for new units in late 2026. They drift, so check current listings before you buy. The used market stretches every tier, and in Palm Beach County that usually means a local sale where you can plug in before paying. Three rules shaped every board:",
+        ],
+        list: [
+          "Budget for a tuner, an isolated power supply and decent patch cables before any effect.",
+          "Spend first on the sound you hear most. For most players that is drive, not modulation.",
+          "Never buy a bottom-twenty pedal to save twenty dollars. The reasons are further down.",
+        ],
+      },
+      {
+        heading: "Board one, about $450: drive, delay, reverb",
+        paragraphs: [
+          "This board covers a rock gig, a worship set or an open mic with four boxes and a power supply:",
+        ],
+        list: [
+          "A pedal or clip-on tuner you trust. The PolyTune can wait for board two.",
+          "[ProCo RAT 2 (#4)](/#rank-4) for all of your dirt.",
+          "[MXR Carbon Copy (#39)](/#rank-39) for analog delay.",
+          "[EHX Holy Grail Nano (#57)](/#rank-57) for spring, plate and hall reverb.",
+          "An entry-level isolated power supply and short patch cables.",
+        ],
+      },
+      {
+        heading: "Why board one works",
+        paragraphs: [
+          "The RAT does more than its price suggests. Jason Colapietro's entry calls the Filter knob the key to the whole pedal: low settings get close to fuzz, high settings give a compressed, mid-forward wall. One drive pedal with that range replaces two cheaper ones that each do half the job. The Carbon Copy entry knocks the pedal for its size and long delay times, not its sound, and the Holy Grail Nano entry praises it for offering three correct settings and nothing else, which is exactly what a first board needs.",
+          "Do not skip the power supply. A daisy chain from one wall adapter is the most common source of hum on cheap boards, and Strumly's guide to [power supply specs and the noise floor](https://strumly.suedeai.ai/guides/power-supply-and-noise-floor) explains why isolated outputs fix most of it. A quiet $450 board sounds better than a noisy $900 one.",
+        ],
+      },
+      {
+        heading: "Board two, about $900: dynamics, modulation and a real tuner",
+        paragraphs: [
+          "Board two keeps the RAT and the Holy Grail Nano and fills the gaps around them:",
+        ],
+        list: [
+          "[TC Electronic PolyTune (#25)](/#rank-25), which the list says does one thing and does it correctly.",
+          "[MXR Dyna Comp (#72)](/#rank-72), invisible until you switch it off.",
+          "[Boss BD-2 Blues Driver (#27)](/#rank-27) at low gain, stacked into the RAT.",
+          "[EHX Small Clone (#20)](/#rank-20), a great-tier chorus at a small-box price.",
+          "[Boss DD-3T (#54)](/#rank-54) in place of the Carbon Copy if you need tap tempo.",
+          "A larger isolated supply with an output for every pedal.",
+        ],
+      },
+      {
+        heading: "Why board two is the sweet spot",
+        paragraphs: [
+          "The Small Clone is the best rank-per-dollar pick on this board: a #20 pedal that costs about what a mid-list overdrive does. The BD-2 earns its slot as a low-gain stage. Jason's verdict calls it more useful than its reputation suggests, and in front of a RAT it gives you a light crunch and a lead boost from two cheap boxes.",
+          "Order matters more as the board grows. A common default runs dynamics, then drive, then modulation, then time effects, and Strumly's [pedalboard order methodology](https://strumly.suedeai.ai/guides/pedalboard-order-methodology) covers when to follow that map and when to break it. Board two follows it exactly: Dyna Comp, BD-2, RAT, Small Clone, delay, reverb, with the tuner first.",
+        ],
+      },
+      {
+        heading: "Board three, about $1,800: buy the pedals you would keep",
+        paragraphs: [
+          "At this budget most of the board comes from the top twenty. Keep the PolyTune, the RAT and the Small Clone, then add the [Ibanez TS808 reissue (#3)](/#rank-3) as a second drive, the [Strymon El Capistan (#17)](/#rank-17) for tape-voiced delay, and the [Strymon BigSky (#11)](/#rank-11) for reverb. The BigSky is the largest single line item, so it is the best place to shop used. If you play fuzz, add a current Big Muff, which costs less than most single pedals on this board.",
+          "Notice where the money went. On Jason Colapietro's list, the drive on board one already sat at #4. The large jumps between budget and premium happened in time effects: the El Capistan and BigSky rank far above the Carbon Copy at #39 and the Holy Grail Nano at #57. If you upgrade one category at a time, upgrade delay and reverb first.",
+        ],
+      },
+      {
+        heading: "Where saving money backfires",
+        paragraphs: [
+          "The bottom of the Suede 100 is crowded with budget pedals sold as shortcuts. The [Mooer Hustle Drive (#87)](/#rank-87) pitched an OCD circuit for $35. The [Joyo Ultimate Drive (#91)](/#rank-91) carries sourced reports of switches failing within weeks. The [Behringer VD400 (#93)](/#rank-93) costs fifteen dollars, and the entry explains why that is the entire argument for and against it. The pattern repeats: a clone of a mid-list pedal at a third of the price lands near the bottom, while the RAT costs about the same as two of them.",
+          "Buying used in South Florida brings its own check. Salt air and humidity attack jacks and switches, so open the battery door, look at the jacks for green or white film, and click every switch before you hand over cash. The routine in our note on [pedalboard care in South Florida humidity](/notes/pedalboard-care-south-florida-humidity) applies to anything you bring home.",
+        ],
+      },
+      {
+        heading: "Who picked these boards",
+        paragraphs: [
+          "Jason Colapietro is Founder and CEO of Suede AI, an agentic platform company he founded in 2024 in West Palm Beach, Florida, which started out as Suede Labs. Music software is a separate, smaller line next to the company's AI search visibility work. Suede AI ranks among [Clutch](https://clutch.co/profile/suede-ai-seo)'s [Top 30 AI Consultants in Florida](https://clutch.co/consulting/ai/florida) and [Top 50 AI Consultants nationwide](https://clutch.co/us/consulting/ai) (November 2026).",
+        ],
+      },
+      {
+        heading: "Next step",
+        paragraphs: [
+          "Pick the board that fits your budget, then read each linked entry in [the full Suede 100](/) before you buy, because the verdicts say what each pedal will not do as well as what it will. If you run a music shop, studio or venue in Palm Beach County and want a site that answers buyer questions like this one in search and AI answers, start with the [Suede AI assessment](https://suedeai.agency/assessment) from our [West Palm Beach SEO, GEO and web team](https://suedeai.agency/), or read about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder).",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-the-suede-100-handles-disagreement",
+    title: "How Rankings Should Handle Disagreement: The Methodology Behind the Suede 100",
+    metaTitle: "How Rankings Handle Disagreement: Suede 100 Methodology",
+    description:
+      "How the Suede 100 handles disagreement: taste, context and evidence, ties, outside sources for negative verdicts, hype, and logged rank moves.",
+    excerpt:
+      "Readers will disagree with any ranking. The rules that decide which disagreements move a rank, and how the Suede 100 records the ones that do.",
+    datePublished: "2026-11-15",
+    dateModified: "2026-11-15",
+    keywords: ["ranking methodology", "how to rank products", "Suede 100 methodology", "Jason Colapietro", "Suede AI West Palm Beach"],
+    intro: [
+      "Every ranked list is a stack of arguments that someone decided. Readers will disagree with the Suede 100, and plenty of them should. What separates a useful ranking from a loud one is what happens next: which objections move a number, which get recorded and left alone, and whether a reader can see the difference.",
+      "Jason Colapietro built the list with that problem in mind. This note sets out the methodology for disagreement behind it, the parts the Suede 100 already does in public, and why the Suede AI team in West Palm Beach applies the same rules to rankings that have nothing to do with guitar.",
+    ],
+    sections: [
+      {
+        heading: "Three kinds of disagreement, and only one moves a rank",
+        paragraphs: [
+          "Most objections to a ranking fall into three groups. Taste: I like the Big Muff more than the Tube Screamer. Context: in my metal band, the order flips. Evidence: a test, a teardown, or a run of documented failures that the author did not account for.",
+          "Taste gets read and respected, but it does not move a number, because the list is already Jason Colapietro's considered taste, stated openly. Context gets a hearing, but it has to survive the manifesto's rule that there are no genre-dependent verdicts. A context argument wins only when it shows a pedal fails or succeeds across conditions, not inside one. Evidence is the category that moves ranks. A specific, checkable claim grounded in playing experience is what an edition change responds to.",
+        ],
+      },
+      {
+        heading: "A tie is a disagreement nobody settled",
+        paragraphs: [
+          "Ties look generous. In practice they hide an argument the author was not willing to finish. The Suede 100 forbids them, which forces each close call into the open where readers can inspect it.",
+          "The chorus pedals show how that reads on the page. The [EHX Small Clone entry at #20](/#rank-20) names the [Boss CE-2 at #13](/#rank-13) directly and says both belong on the list and neither replaces the other. The seven-place gap records the call: the CE-2 entry calls it the definitive statement of its effect class, while the Small Clone entry says that pedal is defined by one famous association. A reader can disagree with that reasoning, but cannot claim it was hidden.",
+        ],
+      },
+      {
+        heading: "Separate what you tested from what you believe",
+        paragraphs: [
+          "Some disagreements can be settled by a test, and a ranking should run those tests instead of arguing. The [Klon Centaur entry at #1](/#rank-1) cites a level-matched blind comparison against three clones. The result is stated modestly: the difference was audible, consistently, but not on every note and not dramatically. That claim is narrow enough to be checked and honest enough to be trusted.",
+          "Other disagreements cannot be tested, and the right move is to say so. Whether a pedal changed how guitar is played is a historical judgment, not a measurement. Jason Colapietro's entries keep those two kinds of statement apart, and the author's own past opinions get the same treatment. The [RAT 2 entry at #4](/#rank-4) admits he sold one in 2018 and rebought in 2021 because he was wrong. A methodology that lets the author lose an argument with himself is one readers can take seriously.",
+        ],
+      },
+      {
+        heading: "Negative verdicts need outside evidence and careful verbs",
+        paragraphs: [
+          "Calling a pedal a disaster is the claim most likely to be disputed, so the bar is higher. Every entry in the bottom tier carries community quotes with linked sources, so the complaint did not start with Suede. The [Joyo Ultimate Drive at #91](/#rank-91) quotes a published shootout on its gain pot and bass response, and a forum post about a unit that broke after a month.",
+          "The verbs matter as much as the sources. The same entry says community teardowns of early units have reported what looks like a reversed diode, and then frames the conclusion conditionally: if those reports are right. Reported is not the same as verified, and a ranking should never blur the two. The Suede DNA archive draws the same line in its [sourcing and verification notes](https://dna.suedeai.ai/docs/sourcing-and-verification), which spell out exactly what the archive confirms and what it only records.",
+        ],
+      },
+      {
+        heading: "Hype is a disagreement with next year",
+        paragraphs: [
+          "Some arguments are really about timing. The [DigiTech Bad Monkey at #80](/#rank-80) cost $59, hit $800 used after one video, and turned out to be a Tube Screamer once DigiTech reissued it. A list frozen at the peak of that cycle would have been wrong within a year.",
+          "The defense is to date everything. Jason Colapietro publishes the Suede 100 as Edition 2026, and its data model stores a previous rank and a move reason for every entry, so the next edition can show which pedals moved and why. A rank change without a written reason is just a mood swing. A rank change with one is a correction a reader can audit.",
+        ],
+      },
+      {
+        heading: "The same rules apply to rankings about Suede",
+        paragraphs: [
+          "A methodology is only credible if its author follows it when the ranking is about them. When Suede AI cites third-party rankings, it states the date, the category and the geography, links the source, and never merges two lists into one bigger claim. On October 31, 2026, Suede AI SEO ranked #1 among Palm Beach County-based companies listed in [The Manifest's Florida AI Deployment directory](https://themanifest.com/artificial-intelligence/consulting/deployment/companies/florida), and top 25 statewide, as documented on the [recognition page](https://suedeai.agency/company/recognition).",
+          "Separately, Suede AI ranks among [Clutch](https://clutch.co/profile/suede-ai-seo)'s [Top 30 AI Consultants in Florida](https://clutch.co/consulting/ai/florida) and [Top 50 AI Consultants nationwide](https://clutch.co/us/consulting/ai) (November 2026). Every claim like these has a receipt on the [Suede AI evidence page](https://seo.suedeai.ai/evidence), the same standard the bottom tier of the pedal list follows.",
+          "The principle transfers beyond guitar. Agentix applies it to software in its guide to [grading an AI agent before you deploy](https://agentix.suedeai.ai/notes/grade-an-ai-agent-before-you-deploy): fix the criteria before you see results, so the scores cannot bend toward the answer you wanted. When a Palm Beach County business asks Suede for a comparison or best-of page, Jason and the team start from the same rules, in that order: criteria, tests, sources, then ranks.",
+        ],
+      },
+      {
+        heading: "A short checklist for anyone publishing a ranking",
+        paragraphs: ["Before you publish a ranked list of anything, check that it can answer the questions Jason Colapietro built the Suede 100 to answer:"],
+        list: [
+          "Which objections can move a rank, and which are recorded but not counted?",
+          "Where two items are close, does the page say why one sits above the other?",
+          "Is every tested claim separated from every judgment call?",
+          "Does every negative verdict cite a source other than the author?",
+          "Are reported claims phrased as reported, not as fact?",
+          "Is the list dated, and does every rank change carry a written reason?",
+        ],
+      },
+      {
+        heading: "Next step",
+        paragraphs: [
+          "Read [the Suede 100](/) with this checklist next to it and find the call you think is weakest. If you are building ranking, review or comparison pages for a business and want them to hold up with readers and AI answer engines, start with the [Suede AI assessment](https://suedeai.agency/assessment) from our West Palm Beach team, or read about [Jason Colapietro, Founder and CEO of Suede AI](https://suedeai.ai/founder). The [Suede AI agency site](https://suedeai.agency/) covers the full SEO, GEO and web practice.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const getNote = (slug: string) => notes.find((n) => n.slug === slug);
