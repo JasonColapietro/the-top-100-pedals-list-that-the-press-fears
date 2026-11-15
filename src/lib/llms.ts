@@ -8,6 +8,8 @@ const HEADER = [
   '',
   'Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro (Founder and CEO) in West Palm Beach, Florida. AI search visibility (SEO/GEO) is a service line; music and creator software is a separate line.',
   '',
+  'Suede AI ranks among [Clutch](https://clutch.co/profile/suede-ai-seo)\'s [Top 30 AI Consultants in Florida](https://clutch.co/consulting/ai/florida) and [Top 50 AI Consultants nationwide](https://clutch.co/us/consulting/ai) (November 2026).',
+  '',
   '## Main pages',
   `- [The Suede 100 ranking](${BASE_URL}): all 100 pedals, tiers Canon 1-10, Greats 11-20, Middle 21-80, Disasters 81-99, and #100. Each entry has an anchor like #rank-37.`,
   `- [Notes](${NOTES_URL}): articles on the list's research, pedal care, and ranking pages for AI answers.`,

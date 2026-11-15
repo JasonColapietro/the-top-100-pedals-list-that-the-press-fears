@@ -29,6 +29,14 @@ export function SuedeBuiltBy() {
             Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro. Websites and AI
             search visibility for businesses across Jupiter, Palm Beach Gardens and Palm Beach County.
           </p>
+          <p className="mt-3 max-w-md text-sm leading-6">
+            Suede AI ranks among{' '}
+            <a href="https://clutch.co/profile/suede-ai-seo" className="text-[#d7b36a] hover:text-[#f8efe2]">Clutch</a>&apos;s{' '}
+            <a href="https://clutch.co/consulting/ai/florida" className="text-[#d7b36a] hover:text-[#f8efe2]">Top 30 AI Consultants in Florida</a>{' '}
+            and{' '}
+            <a href="https://clutch.co/us/consulting/ai" className="text-[#d7b36a] hover:text-[#f8efe2]">Top 50 AI Consultants nationwide</a>{' '}
+            (November 2026).
+          </p>
           <Link
             href="/notes"
             className="mt-5 inline-block border border-[#f8efe2]/12 px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-[#cbbda5] transition hover:border-[#d7b36a] hover:text-[#f8efe2]"
